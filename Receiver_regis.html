@@ -1,0 +1,91 @@
+<html>
+<head>
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;    padding:5px;
+}
+#nav {
+    border:3px solid black;
+    line-height:30px;
+	font-size: 100%;
+    background-color:grey;
+    height:500px;
+    width:200px;
+    float:left;
+    padding:5px; 	      
+}
+#section {
+    width:450px;
+	width:300px;
+    float:left;
+    padding:20px;
+	text-align:center; 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}</style>
+</head>
+<title> Megadave Blood Bank</title>
+<link rel="icon" href="http://icons.iconarchive.com/icons/manueek/led-zeppelin/48/Led-Zeppelin-Mothership-icon.png" type="image/png">
+<body style="background-color:grey;">
+
+<form method=POST action=reg.php enctype=multipart/form-data>
+
+<div id="header">
+<h1> <center> Megadave Blood Bank </center></h1><br>
+
+<marquee direction=left behavior=alternate onmouseover=this.stop() onmouseout=this.start() <h6> Trusted Partner For Online Blood Services  </h6></marquee>
+</div>
+<div id=nav>
+<ul>
+<li><a href=home.html><span>Home</span></a></li>
+<li><a href=login.html><span>Login</span></a></li>
+
+</ul>
+</div>
+
+
+<div id="section">
+<h3>Receiver Registration</h3>
+
+<table>
+<tr><td>NAME</td><td><input type=text name=txt></td><tr>
+<tr><td>GENDER</td><td>Male<input type=radio name=rad value male>
+<input type=radio name=rad value=female></td></tr>
+<tr><td>D.O.B</td><td><input type=date name=txt1></td><tr>
+
+<tr><td>FATHER'S NAME</td><td><input type=text name=txt2></td><tr>
+<tr><td>ADDRESS</td><td><input type=text name=txt3></td><tr>
+<tr><td>CITY</td>
+<td><select name=city[]>
+<option value=lucknow>Lucknow</option>
+<option value=kanpur>Kanpur</option>
+<option value=bhopal>Bhopal</option>
+<option value=pune>Pune</option></select></td></tr>
+<tr><td>STATE</td>
+<td><select name=state[]>
+<option value=u.p>U.P</option>
+<option value=m.p>M.P</option>
+<option value=maharashtra>Maharashtra</option></select></td></tr>
+<tr><td>COUNTRY</td><td><input type=text name=txt4 value=INDIA></td></tr>
+<tr><td>EMAIL</td><td><input type=text name=txt5></td></tr>
+<tr><td>CONTACT</td><td><input type=text name=txt6></td><tr>
+<tr><td>PASSWORD</td><td><input type=password name=txt7></td></tr>
+<tr><td>BLOOD GROUP</td><td><input type=text name=TXT8></td></tr>
+<tr><td>PHOTO</td><td><input type=file name=img></td></tr>
+</table><br><br>
+<input type="submit" value="Submit">
+<input type="reset">
+</div>
+<div id="footer">
+Copyright &copy megadave.in</div>
+</form>
+</body>
+</html>
+
